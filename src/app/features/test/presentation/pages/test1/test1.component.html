@@ -1,9 +1,2 @@
 <p>test1 works!</p>
-
-<ng-container *ngIf="data | async as data; else loading">
-    <div>{{data}}</div>
-</ng-container>
-
-<ng-template #loading>
-    <div>Loading</div>
-</ng-template>
+<app-loading-example [dataFromParent]="data"></app-loading-example>
