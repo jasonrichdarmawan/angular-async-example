@@ -1,2 +1,4 @@
 <p>test1 works!</p>
-<app-loading-example [dataFromParent]="data"></app-loading-example>
+Data: <input #inputBox (input)="this.data = inputBox.value">
+<app-input-example [dataFromParent]="data"></app-input-example>
+<app-loading-example></app-loading-example>

@@ -1,7 +1,5 @@
 <p>loading-example works!</p>
 
-<div>Data from parent: {{dataFromParent}}</div>
-
 <ng-container *ngIf="data | async as data; else loading">
     <div>{{data}}</div>
 </ng-container>

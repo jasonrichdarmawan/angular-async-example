@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -7,8 +7,6 @@ import { Observable } from 'rxjs';
   styleUrls: ['./loading-example.component.scss']
 })
 export class LoadingExampleComponent implements OnInit {
-  @Input() dataFromParent!: string;
-
   data: Observable<string>;
 
   constructor() {
